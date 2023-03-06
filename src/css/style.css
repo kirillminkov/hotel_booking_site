@@ -367,4 +367,8 @@ table {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
 }/*# sourceMappingURL=style.css.map */
