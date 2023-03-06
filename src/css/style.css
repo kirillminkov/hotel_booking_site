@@ -504,7 +504,6 @@ img {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar__bottom {
     height: 60px;
@@ -515,6 +514,9 @@ img {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 @media (max-width: 768px) {
@@ -544,6 +546,7 @@ img {
     border: none;
     background-color: #fff;
     cursor: pointer;
+    padding: 0;
   }
   .menu-button__line {
     width: 16px;
