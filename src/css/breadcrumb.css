@@ -1,0 +1,8 @@
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+}
+.breadcrumb-list__item:not(:last-child)::after {
+  content: "/";
+}/*# sourceMappingURL=breadcrumb.css.map */
