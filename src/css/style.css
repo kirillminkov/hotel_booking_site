@@ -891,6 +891,14 @@ img {
   .newsletter__title {
     margin-bottom: 19px;
   }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
