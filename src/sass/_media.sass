@@ -3,9 +3,7 @@
         max-width: 960px
     .hotel
         &-slider
-            width: 590px
-    .swiper
-        &-slide 
+            width: 590px 
             &__image
                 width: 100%
                 height: 100%
@@ -43,10 +41,19 @@
             flex-direction: row
     .booking
         width: 340px
-    .slider
-        width: 100%
+    .hotel
+        &-slider
+            width: 100%
     .map
         width: 340px
+    .reviews
+        &-slider
+            &__item
+                max-width: 580px
+        &__title
+            font-size: 30px
+            line-height: 38px
+            margin-bottom: 50px
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -88,10 +95,10 @@
                 margin-top: 10px
             &__description
                 margin: 5px 0
+        &-slider
+            height: 350px
     .stars
         flex-basis: auto
-    .slider
-        height: 350px
     .hotel
         &-right
             flex-direction: column
@@ -114,17 +121,36 @@
             &__strong
                 font-size: 30px
                 line-height: 38px
-
+    .reviews
+        &-slider
+            &__item
+                padding: 0 30px 30px
+                &::after, &::before
+                    display: none
+            &__button
+                top: 45px
+                &_prev
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    margin-left: -75px
+                &_next
+                    right: 50%
+                    margin-right: -75px
+                    transform: translate(50%, -50%)
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 42px
             
 @media (max-width: 576px)
     .logo 
         width: 99px
         height: 13px
-    .slider
-        height: 250px
     .hotel
-        &__slidere
+        &__slider
             margin-bottom: 20px
+        &-slider
+            height: 250px
     .newsletter
         padding: 76px 0 83px 0
         &__title
