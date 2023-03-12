@@ -1,0 +1,88 @@
+.reviews
+    padding: 40px 0 70px 0
+    &__title
+        font-weight: 700
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        color: $text-color
+        margin-bottom: 70px
+    &-slider 
+        &__item
+            position: relative
+            background-color: #fff
+            border-radius: 8px
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 730px
+            margin: 45px auto 0
+            padding: 0 62px 30px
+            &::before
+                content: ''
+                position: absolute
+                left: 64px
+                top: 13px
+                width: 70px
+                height: 47px
+                background-image: url(../img/quote-left.svg)
+                background-repeat: no-repeat
+            &::after
+                content: ''
+                position: absolute
+                right: 60px
+                top: 118px
+                width: 70px
+                height: 47px
+                background-image: url(../img/quote-right.svg)
+                background-repeat: no-repeat
+        &__button
+            position: absolute
+            z-index: 2
+            top: 50%
+            transform: translateY(-50%)
+            width: 30px
+            height: 30px
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-color: transparent
+            &_prev
+                left: 0
+                background-image: url(../icons/arrow-reviews-prev.svg)
+            &_next
+                right: 0
+                background-image: url(../icons/arrow-reviews-next.svg)
+        &__profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: -45px
+            margin-bottom: 32px
+        &__avatar
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+            margin-bottom: 9px
+        &__text
+            max-width: 537px
+            margin: auto
+            font-size: 12px
+            line-height: 160%
+            text-align: justify
+            color: $text-color
+        &__username
+            margin-bottom: 10px
+            font-weight: 700
+            font-size: 12px
+            line-height: 15px
+            color: $primary-color
+        &__date
+            margin-bottom: 4px
+            font-size: 10px
+            line-height: 13px
+
+        
