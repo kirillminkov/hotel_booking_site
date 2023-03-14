@@ -862,6 +862,75 @@ img {
   line-height: 13px;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+.activities__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 57px;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card__button {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  padding: 7px 22px;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -873,6 +942,10 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 @media (max-width: 992px) {
@@ -920,6 +993,9 @@ img {
   .map {
     width: 340px;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -927,6 +1003,19 @@ img {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 50px;
+  }
+  .activities {
+    padding-bottom: 50px;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 225px;
   }
 }
 @media (max-width: 768px) {
@@ -1009,6 +1098,9 @@ img {
     font-size: 30px;
     line-height: 38px;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1033,6 +1125,19 @@ img {
     line-height: 23px;
     margin-bottom: 42px;
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
+  }
+  .card {
+    width: 48%;
+    height: 255px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1052,6 +1157,9 @@ img {
     margin-bottom: 37px;
   }
   .subscribe {
+    width: 100%;
+  }
+  .card {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
